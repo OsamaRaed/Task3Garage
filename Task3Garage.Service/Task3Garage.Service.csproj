@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Task3Garage.Core\Task3Garage.Core.csproj" />
+    <ProjectReference Include="..\Task3Garage.Data\Task3Garage.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Task3Garage.Core.Dto
 {
-    class CreateMaintenanceServiceDto
+    public class CreateMaintenanceServiceDto
     {
         public int CarId { get; set; }
         public int EmployeeId { get; set; }

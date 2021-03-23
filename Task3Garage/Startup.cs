@@ -12,6 +12,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Task3Garage.Data;
+using Task3Garage.Service.Services.CarService;
+using Task3Garage.Service.Services.CustomerService;
+using Task3Garage.Service.Services.EmployeeService;
+using Task3Garage.Service.Services.MaintenanceReportService;
+using Task3Garage.Service.Services.MaintenanceServiceService;
+using Task3Garage.Service.Services.UserService;
 
 namespace Task3Garage
 {
@@ -34,6 +40,13 @@ namespace Task3Garage
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddSwaggerGen();
+            services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IMaintenanceReportService, MaintenanceReportService>();
+            services.AddScoped<IMaintenanceServiceService, MaintenanceServiceService>();
             services.AddControllersWithViews();
         }
 
@@ -55,6 +68,12 @@ namespace Task3Garage
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Task3 API");
+            });
 
             app.UseAuthentication();
             app.UseAuthorization();

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Task3Garage.Core.ViewModels
+namespace Task3Garage.Core.Dto
 {
-    public class UserVM
+    public class UpdateUserDTO
     {
     }
 }

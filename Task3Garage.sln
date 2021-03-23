@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3Garage.Core", "Task3Ga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3Garage.Data", "Task3Garage.Data\Task3Garage.Data.csproj", "{2A386CF5-E89B-41E3-8F49-AF3ACA2DD076}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3Garage.Service", "Task3Garage.Service\Task3Garage.Service.csproj", "{C067CD74-FD07-4597-8E65-7CFDD5F82B99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2A386CF5-E89B-41E3-8F49-AF3ACA2DD076}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A386CF5-E89B-41E3-8F49-AF3ACA2DD076}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A386CF5-E89B-41E3-8F49-AF3ACA2DD076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C067CD74-FD07-4597-8E65-7CFDD5F82B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C067CD74-FD07-4597-8E65-7CFDD5F82B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C067CD74-FD07-4597-8E65-7CFDD5F82B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C067CD74-FD07-4597-8E65-7CFDD5F82B99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
